@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Fix Robinhood
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/amckee/UserScripts
 // @version      2024.01.19.01
 // @description  Make Robinhood's website actually usable by removing the Shortcut and Alerts popups
 // @author       Adam

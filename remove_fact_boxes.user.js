@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Remove Youtube Fact Boxes
 // @version     2021.06.24.3
-// @namespace   https://github.com/amckee/RemoveYoutubeFactBoxes
+// @namespace   https://github.com/amckee/UserScripts
 // @description Removes the dumbass 'fact' boxes.
 // @author      Adam McKee
 // @include     http*://*youtube.com/*
