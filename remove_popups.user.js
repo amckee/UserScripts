@@ -7,6 +7,7 @@
 // @match        https://robinhood.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=robinhood.com
 // @updateURL    https://raw.githubusercontent.com/amckee/UserScripts/main/remove_popups.user.js
+// @downloadURL  https://raw.githubusercontent.com/amckee/UserScripts/main/remove_popups.user.js
 // @supportURL   https://github.com/amckee/UserScripts/issues
 // @grant        none
 // @run-at       document-end
