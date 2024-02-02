@@ -4,11 +4,11 @@
 // @namespace   https://github.com/amckee/UserScripts
 // @description Removes the super annoying 'we use cookies' boxes, at least as many as I can.
 // @author      Adam McKee
-// @include     http*://*.stackexchange.com/*
-// @include     http*://stackoverflow.com/*
-// @include     http*://serverfault.com/*
-// @include     http*://askubuntu.com/*
-// @include     http*://superuser.com/*
+// @match     http*://*.stackexchange.com/*
+// @match     http*://stackoverflow.com/*
+// @match     http*://serverfault.com/*
+// @match     http*://askubuntu.com/*
+// @match     http*://superuser.com/*
 // @updateURL   https://github.com/amckee/UserScripts/raw/main/removecookiedialogs.user.js
 // @downloadURL https://github.com/amckee/UserScripts/raw/main/removecookiedialogs.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
