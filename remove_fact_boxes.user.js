@@ -1,41 +1,57 @@
 // ==UserScript==
 // @name        Remove Youtube Fact Boxes
-// @version     2021.06.24.3
+// @version     2024.02.02.1
 // @namespace   https://github.com/amckee/UserScripts
 // @description Removes the dumbass 'fact' boxes.
 // @author      Adam McKee
 // @include     http*://*youtube.com/*
 // @updateURL   https://raw.githubusercontent.com/amckee/UserScripts/main/remove_fact_boxes.user.js
+// @downloadURL https://raw.githubusercontent.com/amckee/UserScripts/main/remove_fact_boxes.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
 // @run-at      document-end
 // ==/UserScript==
 
-setTimeout(function() {
+function removePopups() {
     // videos
-    var el = document.getElementById("clarify-box");
-    if( el != null ){
-        console.log("removing clarify-box");
-        el.style.display = 'none';
-        el.remove();
+    var popup = document.getElementById("clarify-box");
+    if(popup){
+        console.log("Removing clarify-box");
+        popup.style.display = 'none';
+        popup.remove();
     } else {
-        console.log("did not find clarify-box");
+        console.log("Did not find clarify-box");
     }
 
     // search results
-    el = document.getElementsByTagName("ytd-clarification-renderer");
-    for (var i = 0; i < el.length; i++) {
+    popup = document.getElementsByTagName("ytd-clarification-renderer");
+    for (var i = 0; i < popup.length; i++) {
         console.log("removing ytd-clarification-renderer in loop");
-        //        el[i].style.display = 'none';
-        el[i].remove();
+        popup[i].remove();
     }
-    el = document.getElementsByTagName("ytd-info-panel-container-renderer");
-    for (i = 0; i < el.length; i++) {
+    popup = document.getElementsByTagName("ytd-info-panel-container-renderer");
+    for (i = 0; i < popup.length; i++) {
         console.log("ytd-info-panel-container-renderer in loop");
-        el[0].style.display = 'none';
-        el[0].remove();
+        popup[0].style.display = 'none';
+        popup[0].remove();
     }
 
     // remove live chat
-    document.querySelector("body > yt-live-chat-app").remove();
-    document.querySelector("#chat").remove();
-}, 1000);
+    popup = document.querySelector("body > yt-live-chat-app");
+    if(popup){
+        console.log("Removing live chat");
+        popup.remove();
+    } else {
+        console.log("Did not find live chat");
+    }
+
+    // remove chat
+    popup = document.querySelector("#chat").remove();
+    if(popup){
+        console.log("Removing #chat");
+        popup.remove();
+    } else {
+        console.log("Did not find #chat");
+    }
+}
+
+setInterval(removePopups, 1000);
