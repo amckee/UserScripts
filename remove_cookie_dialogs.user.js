@@ -10,17 +10,20 @@
 // @include     http*://askubuntu.com/*
 // @include     http*://superuser.com/*
 // @updateURL   https://github.com/amckee/UserScripts/raw/main/removecookiedialogs.user.js
+// @downloadURL https://github.com/amckee/UserScripts/raw/main/removecookiedialogs.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
 // @run-at      document-end
 // ==/UserScript==
 
-setTimeout(function() {
+function removePopups() {
     // videos
-    var el = document.querySelector("body > div.ff-sans.ps-fixed.z-nav-fixed.ws4.sm\\:w-auto.p32.sm\\:p16.bg-black-750.fc-white.bar-lg.b16.l16.r16.js-consent-banner");
-    if( el != null ){
-        console.log("removing cache agreement box");
-        el.remove();
+    var popup = document.querySelector("body > div.ff-sans.ps-fixed.z-nav-fixed.ws4.sm\\:w-auto.p32.sm\\:p16.bg-black-750.fc-white.bar-lg.b16.l16.r16.js-consent-banner");
+    if(popup){
+        console.log("Removing cache agreement box");
+        popup.remove();
     } else {
-        console.log("no dialog found");
+        console.log("No dialog found");
     }
-}, 1000);
+}
+
+setInterval(removePopups, 1000);
