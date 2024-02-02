@@ -12,21 +12,21 @@
 // @run-at       document-end
 // ==/UserScript==
 
-setInterval(function() {
+function removePopups() {
     'use strict';
-
-    var el = null;
+    var popup = null;
 
     // Ditch the stupid keyboard shortcut popup
-    el = document.querySelector("div[id='popover-first-time-shortcuts']");
-    if( el != null ){
-        el.remove();
+    popup = document.querySelector("div[id='popover-first-time-shortcuts']");
+    if(popup){
+        popup.remove();
     }
 
     // Ditch the stupid indicator alerts popup
-    el = document.querySelector("div[role='tooltip']");
-    if( el != null ){
-        el.remove();
+    popup = document.querySelector("div[role='tooltip']");
+    if( popup != null ){
+        popup.remove();
     }
+}
 
-}, 1000)();
+setInterval(removePopups, 1000);
