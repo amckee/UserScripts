@@ -17,13 +17,13 @@
 
 function removePopups() {
     // videos
-    var popup = document.querySelector("body > div.ff-sans.ps-fixed.z-nav-fixed.ws4.sm\\:w-auto.p32.sm\\:p16.bg-black-750.fc-white.bar-lg.b16.l16.r16.js-consent-banner");
-    if(popup){
-        console.log("Removing cache agreement box");
-        popup.remove();
-    } else {
-        console.log("No dialog found");
-    }
+    document.querySelector("body > div.ff-sans.ps-fixed.z-nav-fixed.ws4.sm\\:w-auto.p32.sm\\:p16.bg-black-750.fc-white.bar-lg.b16.l16.r16.js-consent-banner")?.remove();
+    // if(popup){
+    //     console.log("Removing cache agreement box");
+    //     popup.remove();
+    // } else {
+    //     console.log("No dialog found");
+    // }
 }
 
 setInterval(removePopups, 1000);

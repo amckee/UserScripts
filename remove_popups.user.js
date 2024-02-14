@@ -15,19 +15,12 @@
 
 function removePopups() {
     'use strict';
-    var popup = null;
 
     // Ditch the stupid keyboard shortcut popup
-    popup = document.querySelector("div[id='popover-first-time-shortcuts']");
-    if(popup){
-        popup.remove();
-    }
+    document.querySelector("div[id='popover-first-time-shortcuts']")?.remove();
 
     // Ditch the stupid indicator alerts popup
-    popup = document.querySelector("div[role='tooltip']");
-    if( popup != null ){
-        popup.remove();
-    }
+    document.querySelector("div[role='tooltip']")?.remove();
 }
 
 setInterval(removePopups, 1000);
