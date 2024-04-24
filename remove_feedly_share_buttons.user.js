@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Remove Feedly AI Prompt
+// @name         Remove Social Share Buttons
 // @namespace    https://github.com/amckee/UserScripts
 // @version      2024.04.24.1
-// @description  Remove the Feedly AI (aka Leo) prompt
+// @description  Remove the share buttons
 // @author       Adam
 // @match        https://feedly.com/i/collection/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=feedly.com
