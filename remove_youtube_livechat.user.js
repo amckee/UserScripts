@@ -12,8 +12,11 @@
 // ==/UserScript==
 
 function removePopups() {
-    // videos
+    // remove the live chat element
     document.getElementById("chat-container")?.remove();
+
+    // remove the live chat parent element for reflow
+    document.getElementById("panels-full-bleed-container")?.remove();
 }
 
 setInterval(removePopups, 1000);
