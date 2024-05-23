@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Remove Youtube Live Chat
-// @version     2024.05.23.1
+// @version     2024.05.23.2
 // @namespace   https://github.com/amckee/UserScripts
 // @description Removes the livechat box
 // @author      Adam McKee
