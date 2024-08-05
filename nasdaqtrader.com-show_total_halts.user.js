@@ -10,12 +10,30 @@
 // @supportURL  https://github.com/amckee/UserScripts/issues
 // ==/UserScript==
 
-function showTotalHalts() {
-    // load entire table
-    var halts = document.querySelector("#divTradeHaltResults > div > table > tbody > tr:nth-child(1)");
+(function() {
+    'use strict';
 
-    // filter halts for todays halts only and count 'em
-    var today = new Date();
-}
+    function showTotalHalts() {
+        // load entire table
+        var haltsTable = document.querySelector("#divTradeHaltResults > div > table");
 
-setInterval(showTotalHalts, 1000);
+        // filter halts for todays halts only and count 'em
+        var today = new Date();
+        var todayDate = today.toLocaleDateString();
+        var totalHalts = 0;
+
+        for (var i = 1; i < haltsTable.rows.length; i++) {
+            var haltDate = haltsTable.rows[i].cells[0].textContent.trim();
+            if (haltDate === todayDate) {
+                totalHalts++;
+            }
+        }
+
+        // display the total number of halted trades
+        var totalHaltsElement = document.createElement("div");
+        totalHaltsElement.textContent = "Total Halts Today: " + totalHalts;
+        document.body.appendChild(totalHaltsElement);
+    }
+
+    setInterval(showTotalHalts, 1000);
+})();
