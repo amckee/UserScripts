@@ -8,7 +8,6 @@
 // @updateURL   https://raw.githubusercontent.com/amckee/UserScripts/main/nasdaqtrader.com-show_total_halts.user.js
 // @downloadURL https://raw.githubusercontent.com/amckee/UserScripts/main/nasdaqtrader.com-show_total_halts.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
-// @run-at      document-end document-refresh
 // ==/UserScript==
 
 function showTotalHalts() {
