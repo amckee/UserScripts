@@ -1,4 +1,4 @@
-// ==UserScripts==
+// ==UserScript==
 // @name        Show Total Halts on nasdaqtrader.com
 // @version     2024.08.05.2
 // @namespace   https://github.com/amckee/UserScripts
