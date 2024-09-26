@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Clean Up Github.com
 // @namespace    https://github.com/amckee/UserScripts
-// @version      2024.04.19.1
+// @version      2024.09.26.1
 // @description  Remove various advertisements from Github pages
 // @author       Adam
 // @match        https://github.com/*

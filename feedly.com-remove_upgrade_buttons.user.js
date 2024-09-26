@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Feedly Upgrade Buttons
 // @namespace    https://github.com/amckee/UserScripts
-// @version      2024.04.24.1
+// @version      2024.09.26.1
 // @description  Remove the Feedly upgrade buttons
 // @author       Adam
 // @match        https://feedly.com/i/collection/*

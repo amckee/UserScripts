@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fix Robinhood
 // @namespace    https://github.com/amckee/UserScripts
-// @version      2024.02.14.1
+// @version      2024.09.26.1
 // @description  Make Robinhood's website actually usable by removing the Shortcut and Alerts popups
 // @author       Adam
 // @match        https://robinhood.com/*

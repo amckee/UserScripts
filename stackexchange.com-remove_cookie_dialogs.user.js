@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Remove Cookie Agreement Boxes
-// @version     2024.02.14.1
+// @version      2024.09.26.1
 // @namespace   https://github.com/amckee/UserScripts
 // @description Removes the super annoying 'we use cookies' boxes, at least as many as I can.
 // @author      Adam McKee
