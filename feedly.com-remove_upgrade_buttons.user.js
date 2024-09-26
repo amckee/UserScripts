@@ -6,8 +6,8 @@
 // @author       Adam
 // @match        https://feedly.com/i/collection/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=feedly.com
-// @updateURL    https://raw.githubusercontent.com/amckee/UserScripts/main/remove_feedly_ai_prompt.user.js
-// @downloadURL  https://raw.githubusercontent.com/amckee/UserScripts/main/remove_feedly_ai_prompt.user.js
+// @updateURL    https://raw.githubusercontent.com/amckee/UserScripts/main/feedly.com-remove_upgrade_buttons.user.js
+// @downloadURL  https://raw.githubusercontent.com/amckee/UserScripts/main/feedly.com-remove_upgrade_buttons.user.js
 // @supportURL   https://github.com/amckee/UserScripts/issues
 // @grant        none
 // @run-at       document-end

@@ -6,8 +6,8 @@
 // @author       Adam
 // @match        https://github.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
-// @updateURL    https://raw.githubusercontent.com/amckee/UserScripts/main/remove_github_ads.user.js
-// @downloadURL  https://raw.githubusercontent.com/amckee/UserScripts/main/remove_github_ads.user.js
+// @updateURL    https://raw.githubusercontent.com/amckee/UserScripts/main/github.com-remove_ads.user.js
+// @downloadURL  https://raw.githubusercontent.com/amckee/UserScripts/main/github.com-remove_ads.user.js
 // @supportURL   https://github.com/amckee/UserScripts/issues
 // @grant        none
 // @run-at       document-end

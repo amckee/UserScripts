@@ -9,8 +9,8 @@
 // @match     http*://serverfault.com/*
 // @match     http*://askubuntu.com/*
 // @match     http*://superuser.com/*
-// @updateURL   https://github.com/amckee/UserScripts/raw/main/removecookiedialogs.user.js
-// @downloadURL https://github.com/amckee/UserScripts/raw/main/removecookiedialogs.user.js
+// @updateURL   https://github.com/amckee/UserScripts/raw/main/stackexchange.com-remove_cookie_dialogs.user.js
+// @downloadURL https://github.com/amckee/UserScripts/raw/main/stackexchange.com-remove_cookie_.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
 // @run-at      document-end
 // ==/UserScript==

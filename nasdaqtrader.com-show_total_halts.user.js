@@ -4,7 +4,7 @@
 // @namespace   https://github.com/amckee/UserScripts
 // @description Shows total number of halted trades on nasdaqtrader.com
 // @author      Adam McKee
-// @include     http*://*.nasdaqtrader.com/Trader.aspx*
+// @match     http*://*.nasdaqtrader.com/Trader.aspx*
 // @updateURL   https://raw.githubusercontent.com/amckee/UserScripts/main/nasdaqtrader.com-show_total_halts.user.js
 // @downloadURL https://raw.githubusercontent.com/amckee/UserScripts/main/nasdaqtrader.com-show_total_halts.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
@@ -13,6 +13,8 @@
 
 (function() {
     'use strict';
+
+    console.log( "Running" );
 
     function showTotalHalts() {
         // load entire table
@@ -32,7 +34,6 @@
                 todaysHalts++;
             }
         }
-
 
         // Add the count to the main page header
         var pageHeader = document.querySelector("#rightWideCOL > h1");
