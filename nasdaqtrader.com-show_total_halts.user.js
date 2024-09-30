@@ -30,11 +30,11 @@
         for (var i = 1; i < haltsTable.rows.length; i++) {
             var haltDate = new Date(haltsTable.rows[i].cells[0].textContent.trim());
 
-            console.log("haltDate: " + haltDate);
-            console.log("todayDate: " + todayDate);
+            // console.log("haltDate: " + haltDate);
+            // console.log("todayDate: " + todayDate);
 
             if ( +haltDate === +todayDate ) {
-                console.log("Found halt for today. Plus one!");
+                // console.log("Found halt for today. Plus one!");
                 todaysHalts++;
                 continue;
             }
