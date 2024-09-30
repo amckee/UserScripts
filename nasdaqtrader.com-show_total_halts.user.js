@@ -33,16 +33,11 @@
             console.log("haltDate: " + haltDate);
             console.log("todayDate: " + todayDate);
 
-            if ( haltDate == todayDate ) {
+            if ( +haltDate === +todayDate ) {
                 console.log("Found halt for today. Plus one!");
                 todaysHalts++;
                 continue;
             }
-
-            // if (haltDate == todayDate) {
-            //     console.log("Found halt for today. Plus one!");
-            //     todaysHalts++;
-            // }
         }
 
         // Add the count to the main page header
