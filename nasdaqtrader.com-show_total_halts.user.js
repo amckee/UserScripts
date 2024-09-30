@@ -20,16 +20,17 @@
         // load entire table
         var haltsTable = document.querySelector("#divTradeHaltResults > div > table");
 
-        console.log("haltsTable: " + haltsTable);
+        // console.log("haltsTable: " + haltsTable);
 
         // filter halts for todays halts only and count 'em
         var today = new Date();
         var todayDate = today.toLocaleDateString();
-        console.log("todayDate: " + todayDate);
+        // console.log("todayDate: " + todayDate);
         var todaysHalts = 0;
 
         for (var i = 1; i < haltsTable.rows.length; i++) {
             var haltDate = haltsTable.rows[i].cells[0].textContent.trim();
+            console.log("haltDate: " + haltDate);
             if (haltDate === todayDate) {
                 todaysHalts++;
             }
@@ -37,7 +38,7 @@
 
         // Add the count to the main page header
         var pageHeader = document.querySelector("#rightWideCOL > h1");
-        pageHeader.textContent = todaysHalts + " " + pageHeader.textContent;
+        pageHeader.textContent = todaysHalts + " Current Trading Halts";
     }
 
     setInterval(showTotalHalts, 1000);
