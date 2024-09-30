@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Show Total Halts on nasdaqtrader.com
-// @version      2024.09.30.1
+// @version     2024.09.30.3
 // @namespace   https://github.com/amckee/UserScripts
 // @description Shows total number of halted trades on nasdaqtrader.com
 // @author      Adam McKee
-// @match     http*://*.nasdaqtrader.com/Trader.aspx*
+// @match       http*://*.nasdaqtrader.com/Trader.aspx*
 // @updateURL   https://raw.githubusercontent.com/amckee/UserScripts/main/nasdaqtrader.com-show_total_halts.user.js
 // @downloadURL https://raw.githubusercontent.com/amckee/UserScripts/main/nasdaqtrader.com-show_total_halts.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
@@ -30,8 +30,9 @@
 
         for (var i = 1; i < haltsTable.rows.length; i++) {
             var haltDate = haltsTable.rows[i].cells[0].textContent.trim();
-            console.log("haltDate: " + haltDate);
+            // console.log("haltDate: " + haltDate);
             if (haltDate === todayDate) {
+                console.log("Found halt for today. Plus one!");
                 todaysHalts++;
             }
         }
