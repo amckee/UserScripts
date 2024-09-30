@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Show Total Halts on nasdaqtrader.com
-// @version     2024.09.30.3
+// @version     2024.09.30.4
 // @namespace   https://github.com/amckee/UserScripts
 // @description Shows total number of halted trades on nasdaqtrader.com
 // @author      Adam McKee
