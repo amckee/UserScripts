@@ -29,13 +29,20 @@
         var todaysHalts = 0;
 
         for (var i = 1; i < haltsTable.rows.length; i++) {
-            var haltDate = haltsTable.rows[i].cells[0].textContent.trim();
-            console.log("haltDate: " + haltDate);
-            console.log("todayDate: " + todayDate);
-            if (haltDate == todayDate) {
+            var haltDate = new Date(haltsTable.rows[i].cells[0].textContent.trim());
+
+            console.log("haltDate.getDate(): " + haltDate.getDate());
+
+            if ( haltDate.getDate() == todayDate.getDate() ) {
                 console.log("Found halt for today. Plus one!");
                 todaysHalts++;
+                continue;
             }
+
+            // if (haltDate == todayDate) {
+            //     console.log("Found halt for today. Plus one!");
+            //     todaysHalts++;
+            // }
         }
 
         // Add the count to the main page header
