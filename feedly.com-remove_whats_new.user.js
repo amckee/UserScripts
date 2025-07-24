@@ -17,7 +17,7 @@ function removeElements() {
     'use strict';
 
     // Ditch the Upgrade buttons
-    document.querySelector("div[class='StarFeatureDockedPopup']")?.remove();
+    document.querySelector("div[id='AppDockedPopups']")?.remove();
 }
 
 setInterval(removeElements, 1000);
