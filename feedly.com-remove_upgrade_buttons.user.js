@@ -17,7 +17,7 @@ function removeElements() {
     'use strict';
 
     // Ditch the Upgrade buttons
-    document.querySelector("div[id='topHeaderBarFX']")?.remove();
+    document.querySelector("div[id='TopHeaderBar']")?.remove();
 }
 
 setInterval(removeElements, 1000);
