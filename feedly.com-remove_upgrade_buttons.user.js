@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Feedly Upgrade Buttons
 // @namespace    https://github.com/amckee/UserScripts
-// @version      2025.07.24.1
+// @version      2025.07.24.2
 // @description  Remove the Feedly upgrade buttons
 // @author       Adam
 // @match        https://feedly.com/i/collection/*
@@ -17,7 +17,7 @@ function removeElements() {
     'use strict';
 
     // Ditch the Upgrade buttons
-    document.querySelector("div[id='TopHeaderBar']")?.remove();
+    document.querySelector("div[class='TopHeaderBar']")?.remove();
 }
 
 setInterval(removeElements, 1000);
