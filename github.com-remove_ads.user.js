@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Clean Up Github.com
 // @namespace    https://github.com/amckee/UserScripts
-// @version      2024.09.26.1
+// @version      2026.04.15.1
 // @description  Remove various advertisements from Github pages
 // @author       Adam
 // @match        https://github.com/*
@@ -18,6 +18,9 @@ function removeElements() {
 
     // Ditch the various annoyances
     document.querySelectorAll("div[class='js-notice']")?.forEach(function(currentValue){ currentValue.remove(); });
+    
+    // Ditch the "Sponsorships" button
+    document.querySelectorAll("div[class='AppDockedPopups']")?.forEach(function(currentValue){ currentValue.remove(); });
 }
 
 setInterval(removeElements, 1000);
