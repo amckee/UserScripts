@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Feedly "What's New" Popup
 // @namespace    https://github.com/amckee/UserScripts
-// @version      2025.07.24.1
+// @version      2026.04.15.1
 // @description  Remove the Feedly "what's new" popup
 // @author       Adam
 // @match        https://feedly.com/i/collection/*
