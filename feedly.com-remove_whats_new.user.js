@@ -18,6 +18,10 @@ function removeElements() {
 
     // Ditch the Upgrade buttons
     document.querySelector("div[id='AppDockedPopups']")?.remove();
+
+    // They seem to have renamed it
+    document.querySelectorAll("div[class='AppDockedPopups']")?.forEach(function(currentValue){ currentValue.remove(); });
+
 }
 
 setInterval(removeElements, 1000);

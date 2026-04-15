@@ -18,9 +18,6 @@ function removeElements() {
 
     // Ditch the various annoyances
     document.querySelectorAll("div[class='js-notice']")?.forEach(function(currentValue){ currentValue.remove(); });
-    
-    // Ditch the "Sponsorships" button
-    document.querySelectorAll("div[class='AppDockedPopups']")?.forEach(function(currentValue){ currentValue.remove(); });
-}
+    }
 
 setInterval(removeElements, 1000);
