@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Remove Cookie Agreement Boxes
+// @name        Remove Elevated Risk Boxes
 // @version     2026.05.08.1
 // @namespace   https://github.com/amckee/UserScripts
 // @description Removes the super annoying 'Elevated investment risk' boxes.
