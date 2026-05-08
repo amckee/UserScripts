@@ -4,7 +4,7 @@
 // @namespace   https://github.com/amckee/UserScripts
 // @description Removes the super annoying 'Elevated investment risk' boxes.
 // @author      Adam McKee
-// @match     https*://*.robinhood.com/*
+// @match       https*://*.robinhood.com/*
 // @updateURL   https://github.com/amckee/UserScripts/raw/main/robinhood.com-remove_annoying_boxes.user.js
 // @downloadURL https://github.com/amckee/UserScripts/raw/main/robinhood.com-remove_annoying_boxes.user.js
 // @supportURL  https://github.com/amckee/UserScripts/issues
